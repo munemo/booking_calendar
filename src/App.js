@@ -1,8 +1,10 @@
-function App() {
+import { Navigation } from './components/navigation/Navigation'
+import {Routes} from './routes/Routes'
+import './shared/global/Global.css'
+
+export const App = () => {
   return (
     <div>
-      <h1>Yo!</h1>
+       <Routes><Navigation/></Routes>
     </div>
   );}
-
-export default App;
