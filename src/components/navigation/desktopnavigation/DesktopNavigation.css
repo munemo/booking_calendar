@@ -40,3 +40,9 @@ span{
 
     grid-column: 9/10;
 }
+
+.registerHeading {
+
+    justify-self: center;
+    align-self: center;
+}

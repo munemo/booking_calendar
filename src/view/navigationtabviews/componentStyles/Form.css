@@ -1,0 +1,6 @@
+.registrationForm{
+    display: grid;
+    grid-column: 1/20;
+    justify-self: center ;
+    align-self: center;
+}
