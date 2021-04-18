@@ -1,10 +1,10 @@
-import './DesktopNavigation.css'
 import {useHistory} from 'react-router-dom'
-import logo from '../../../shared/images/logo.png'
+import logotyp from '../../../shared/images/logotyp.png'
 import RoutingPath from '../../../routes/RoutingPath'
 import {useContext} from 'react'
 import {UserContext} from '../../../shared/provider/UserProvider'
 import {Profile} from '../../../components/profile/Profile'
+import styled from "styled-components";
 
 export const DesktopNavigation = () => {
         const [authenticatedUser, setAuthenticatedUser] = useContext(UserContext)
@@ -12,14 +12,49 @@ export const DesktopNavigation = () => {
 
         const displayAuthUserOrLogin = () => {
                 return authenticatedUser
-                ? <span className='authUserNavigation'><Profile/></span>
-                : <span className='loginButton' onClick={()=> history.push(RoutingPath.loginView)}>Login</span>
+                ? <span ><Profile/></span>
+                : <span onClick={()=> history.push(RoutingPath.loginView)}>Login</span>
                 }
-                           
-    return (
-        <div className='desktopNavigationWrapper'>
-                <img className='navlogo' onClick={()=> history.push(RoutingPath.homeView)} src={logo} alt={'error..'}/>
-                <span className='registerButton' onClick={()=> history.push(RoutingPath.registerView)}>Register</span>
-                {displayAuthUserOrLogin()}
-        </div>
+
+        const StyledDesktopNavigation = styled.header`
+        background: blue;
+        display:grid;
+        grid-template-columns: repeat(10,1fr);
+        padding: 20px;
+        color: black;      
+        text-transform: uppercase;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;`
+
+        const StyledLogin = styled.button`
+        font-size: 1em;
+        margin: 1em;
+        border: 2px solid black;
+        border-radius: 10px;
+        height: 40%;
+        width: 60%; `
+
+        const StyledRegister = styled.button`
+        cursor: pointer; 
+        grid-column: 9/10;
+        grid-rows: 9/10;
+        font-size: 1em;
+        margin: 1em;
+        padding: 0.25em 1em;
+        border: 2px solid black;
+        border-radius: 10px;
+        height: 40%;
+        width: 60%; `
+
+        const StyledLogo = styled.img`
+        cursor: pointer;`
+        
+ 
+          return (
+                <div>
+                        < StyledDesktopNavigation >
+                        <StyledLogo onClick={()=> history.push(RoutingPath.homeView)} src={logotyp} alt={'error..'}></StyledLogo>
+                        <StyledRegister onClick={()=> history.push(RoutingPath.registerView)}>Register</StyledRegister>
+                        <StyledLogin>{displayAuthUserOrLogin()}</StyledLogin>
+                        </StyledDesktopNavigation>
+                </div>
 )}
