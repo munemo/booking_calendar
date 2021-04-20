@@ -12,6 +12,8 @@ export const ProfileDropdown = () => {
     const logout = () => {
         setAuthenticatedUser(false)
         localStorage.removeItem('username')
+        localStorage.removeItem('password')
+
         history.push(RoutingPath.homeView)
 
         

@@ -40,25 +40,29 @@ import styled from "styled-components";
 
 export const LoginView = () => {
     const history = useHistory()
-    const [username, setUsername] = useState('')
+
+   
+   const [user, setUser] = useState({username:'',password:''})
+
     const [authenticatedUser, setAuthenticatedUser] = useContext(UserContext)
     
     const logIn = () =>{
-        setAuthenticatedUser(username)
-        localStorage.setItem('username', username)
+        setAuthenticatedUser(user.username,user.password)
+        localStorage.setItem('username',user.username)
+        localStorage.setItem('password',user.password)
+    
+
         history.push(RoutingPath.homeView)
     }
-   
+    
     return (
         <div>
             <StyledLoginWrapper>
                 <StyledLoginTitle>Please Login</StyledLoginTitle>
-                    <StyledLoginForm><span><b>Username:</b> </span> <input onChange={event => setUsername(event.target.value)}/> <br></br><br></br>
-                    <span><b>Password: </b> <input onChange={event => setUsername(event.target.value)}/></span> <br></br>
-                    <StyledLoginButton onClick={() => logIn()}>Login</StyledLoginButton>
-                    
-            </StyledLoginForm>
-
+                    <StyledLoginForm ><span><b>Username:</b> </span> <input value={user.username} onChange={event => setUser({ ...user, username: event.target.value})}/> <br></br><br></br>
+                    <span><b>Password:</b> </span> <input value={user.password} onChange={event => setUser({ ...user, password: event.target.value})}/> <br></br><br></br>
+                    <StyledLoginButton onClick={() => logIn()}>Login</StyledLoginButton>       
+                </StyledLoginForm>
             </StyledLoginWrapper>
           
         </div>

@@ -54,7 +54,7 @@ export const DesktopNavigation = () => {
                         < StyledDesktopNavigation >
                         <StyledLogo onClick={()=> history.push(RoutingPath.homeView)} src={logotyp} alt={'error..'}></StyledLogo>
                         <StyledRegister onClick={()=> history.push(RoutingPath.registerView)}>Register</StyledRegister>
-                        <StyledLogin>{displayAuthUserOrLogin()}</StyledLogin>
+                        <StyledLogin >{displayAuthUserOrLogin()}</StyledLogin>
                         </StyledDesktopNavigation>
                 </div>
 )}
