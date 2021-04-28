@@ -8,6 +8,9 @@ import RoutingPath from './RoutingPath'
 import { NewBookings } from '../view/profiledropdownviews/NewBookings'
 import { CurrentBookings } from '../view/profiledropdownviews/CurrentBookings'
 import { Profile } from '../view/profiledropdownviews/Profile'
+import {StarWars} from '../view/navigationtabviews/StarWars'
+import {Pokemon} from '../view/navigationtabviews/Pokemon'
+import {ItemView} from '../view/ItemView'
 
 
 export const Routes = ({children}) => {
@@ -48,6 +51,10 @@ export const Routes = ({children}) => {
                     <Route exact path={RoutingPath.newBookingsView} component={requireAuthentication(NewBookings)}/>
                     <Route exact path={RoutingPath.currentBookingsView} component={requireAuthentication(CurrentBookings)}/>
                     <Route exact path={RoutingPath.profileView} component={requireAuthentication(Profile)}/>
+                    <Route exact path={RoutingPath.starwarsView} component={StarWars}/>
+                    <Route exact path={RoutingPath.pokemonView} component={Pokemon}/>
+                    <Route exact path={RoutingPath.itemDetailView} component={ItemView}/>
+
                     <Route component={HomeView} />
                 </Switch>
             </BrowserRouter>

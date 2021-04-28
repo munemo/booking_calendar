@@ -4,6 +4,7 @@ import RoutingPath from '../../../routes/RoutingPath'
 import {useContext} from 'react'
 import {UserContext} from '../../../shared/provider/UserProvider'
 import {Profile} from '../../../components/profile/Profile'
+
 import styled from "styled-components";
 
 export const DesktopNavigation = () => {
@@ -54,6 +55,8 @@ export const DesktopNavigation = () => {
                         < StyledDesktopNavigation >
                         <StyledLogo onClick={()=> history.push(RoutingPath.homeView)} src={logotyp} alt={'error..'}></StyledLogo>
                         <StyledRegister onClick={()=> history.push(RoutingPath.registerView)}>Register</StyledRegister>
+                        <StyledRegister onClick={()=> history.push(RoutingPath.starwarsView)}>Starwars</StyledRegister>
+                        <StyledRegister onClick={()=> history.push(RoutingPath.pokemonView)}>Pokemon</StyledRegister>
                         <StyledLogin >{displayAuthUserOrLogin()}</StyledLogin>
                         </StyledDesktopNavigation>
                 </div>

@@ -1,5 +1,6 @@
 import styled from "styled-components";
-
+import {useState} from 'react'
+import Kalendar from '../calendar/Kalendar'
 
     const StyledRegisterWrapper = styled.div`
     display: grid;
@@ -16,15 +17,27 @@ import styled from "styled-components";
     justify-self: center;
     `
 
-
-
         export const HomeView = () => {
+
+         const [data,setData] = useState()
+
+             const fetchData = async () => {
+
+               
+                }
+
             return (
-                <div>
+                <div> 
+                     
+
                     <StyledRegisterWrapper>
-                        <StyledRegisterTitle>Laundry Booking Calendar</StyledRegisterTitle>    
+                        <StyledRegisterTitle>Laundry Booking Calendar</StyledRegisterTitle> 
+                        
+                          
                     </StyledRegisterWrapper>
-                    
+
+                   <Kalendar/>
+                   
                 </div>
             )
         }
