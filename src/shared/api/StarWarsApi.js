@@ -7,4 +7,5 @@ const StarWarsAPI = Axios.create({
     headers: {'Content-Type': 'application/json'}
 })
 
+
 export default StarWarsAPI

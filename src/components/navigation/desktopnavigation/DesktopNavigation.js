@@ -8,6 +8,7 @@ import {Profile} from '../../../components/profile/Profile'
 import styled from "styled-components";
 
 export const DesktopNavigation = () => {
+        //eslint-disable-next-line
         const [authenticatedUser, setAuthenticatedUser] = useContext(UserContext)
         const history = useHistory()
 

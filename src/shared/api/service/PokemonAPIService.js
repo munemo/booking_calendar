@@ -14,7 +14,7 @@ const get100Pokemons = () => {
     
 }
 
-
+// eslint-disable-next-line
 export default {
     getPokemonCharacter,
     searchPokemonCharacter,

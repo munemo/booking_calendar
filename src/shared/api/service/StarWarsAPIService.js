@@ -9,6 +9,7 @@ const getStarWarsCharacter = (id) => {
     
 }
 
+// eslint-disable-next-line
 export default {
     getLukeSkyWalker,
     getStarWarsCharacter

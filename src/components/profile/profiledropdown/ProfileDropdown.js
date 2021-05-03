@@ -5,6 +5,7 @@ import {useContext} from 'react'
 import {UserContext} from '../../../shared/provider/UserProvider'
 
 export const ProfileDropdown = () => {
+    // eslint-disable-next-line
     const [authenticatedUser, setAuthenticatedUser] = useContext(UserContext)
 
     const history = useHistory()

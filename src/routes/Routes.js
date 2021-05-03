@@ -1,4 +1,4 @@
-import {useContext, useEffect} from 'react'
+import {useContext} from 'react'
 import {UserContext} from '../shared/provider/UserProvider'
 import {BrowserRouter, Switch, Route} from 'react-router-dom'
 import { LoginView } from '../view/navigationtabviews/LoginView'
@@ -15,6 +15,7 @@ import {ItemView} from '../view/ItemView'
 
 export const Routes = ({children}) => {
 
+    // eslint-disable-next-line
     const [authenticatedUser, setAuthenticatedUser] = useContext(UserContext)
    
     const blockIfAuthenticated = (navigateToViewIfAuthenticated) => {
@@ -32,7 +33,8 @@ export const Routes = ({children}) => {
         if(getlocalStorage)
         if(authenticatedUser)
    
-        {       
+        {    
+            // eslint-disable-next-line   
             checkIfUserIsAuthenticated(getlocalStorage)
 
         }

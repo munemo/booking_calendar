@@ -44,6 +44,7 @@ export const LoginView = () => {
    
    const [user, setUser] = useState({username:'',password:''})
 
+   // eslint-disable-next-line
     const [authenticatedUser, setAuthenticatedUser] = useContext(UserContext)
     
     const logIn = () =>{

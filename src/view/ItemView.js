@@ -1,7 +1,7 @@
 import {useLocation} from 'react-router-dom'
 import {useEffect, useState} from 'react'
 import Axios from 'axios'
-import loading from "../shared/images/loading.jpg"
+import loadinggiff from "../shared/images/loading.jpg"
 
 export const ItemView = () => {
    
@@ -25,7 +25,7 @@ export const ItemView = () => {
         if(!loading)
         return (
         <div>
-            <h1>Picture: <img src={APIData?.sprites?.front_default} alt="picture not found"/> </h1>
+            <h1>Picture: <img src={APIData?.sprites?.front_default} alt=""/> </h1>
             <h1>Name: {APIData?.name}</h1>
             <h1>Height: {APIData?.height} cm</h1>
             <h1>Weight: {APIData?.weight} kg</h1>
@@ -33,12 +33,11 @@ export const ItemView = () => {
     )}
 
     useEffect(()=> {
-            fetchData()
-
+        fetchData()
     },[])
 
     return (
-            loading ? <img src={loading} alt="image error"/> : 
+            loading ? <img src={loadinggiff} alt=""/> : 
         <div>
             
           {displayData()}                    

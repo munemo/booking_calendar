@@ -1,5 +1,4 @@
-import styled from "styled-components";
-import {useState} from 'react'
+//import styled from "styled-components";
 import Kalendar from '../calendar/Kalendar'
 
  /*   const StyledRegisterWrapper = styled.div`

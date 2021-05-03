@@ -8,7 +8,9 @@ import 'react-calendar/dist/Calendar.css';
 const Kalendar = () => {
 
     const [date, setDate] = useState(new Date())
+  
     const [startTime, setStartTime] = useState('')
+  // eslint-disable-next-line
     const [endTime, setEndTime] = useState('')
     
 

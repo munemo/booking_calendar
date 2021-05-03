@@ -8,6 +8,7 @@ const starwarsView = '/starwars'
 const pokemonView = '/pokemon'
 const itemDetailView = '/itemdetail'
 
+// eslint-disable-next-line
 export default{
 homeView,
 registerView,
