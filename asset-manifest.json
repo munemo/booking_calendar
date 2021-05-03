@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/http//munemo.github.io/booking_calendar/static/css/main.1fa7570f.chunk.css",
+    "main.js": "/http//munemo.github.io/booking_calendar/static/js/main.76a7a630.chunk.js",
+    "main.js.map": "/http//munemo.github.io/booking_calendar/static/js/main.76a7a630.chunk.js.map",
+    "runtime-main.js": "/http//munemo.github.io/booking_calendar/static/js/runtime-main.180f7bb7.js",
+    "runtime-main.js.map": "/http//munemo.github.io/booking_calendar/static/js/runtime-main.180f7bb7.js.map",
+    "static/css/2.598dcaac.chunk.css": "/http//munemo.github.io/booking_calendar/static/css/2.598dcaac.chunk.css",
+    "static/js/2.bbfdd99f.chunk.js": "/http//munemo.github.io/booking_calendar/static/js/2.bbfdd99f.chunk.js",
+    "static/js/2.bbfdd99f.chunk.js.map": "/http//munemo.github.io/booking_calendar/static/js/2.bbfdd99f.chunk.js.map",
+    "static/js/3.5994d3fe.chunk.js": "/http//munemo.github.io/booking_calendar/static/js/3.5994d3fe.chunk.js",
+    "static/js/3.5994d3fe.chunk.js.map": "/http//munemo.github.io/booking_calendar/static/js/3.5994d3fe.chunk.js.map",
+    "index.html": "/http//munemo.github.io/booking_calendar/index.html",
+    "static/css/2.598dcaac.chunk.css.map": "/http//munemo.github.io/booking_calendar/static/css/2.598dcaac.chunk.css.map",
+    "static/css/main.1fa7570f.chunk.css.map": "/http//munemo.github.io/booking_calendar/static/css/main.1fa7570f.chunk.css.map",
+    "static/js/2.bbfdd99f.chunk.js.LICENSE.txt": "/http//munemo.github.io/booking_calendar/static/js/2.bbfdd99f.chunk.js.LICENSE.txt",
+    "static/media/loading.8d1c03f2.jpg": "/http//munemo.github.io/booking_calendar/static/media/loading.8d1c03f2.jpg",
+    "static/media/logotyp.dc40fe84.png": "/http//munemo.github.io/booking_calendar/static/media/logotyp.dc40fe84.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.180f7bb7.js",
+    "static/css/2.598dcaac.chunk.css",
+    "static/js/2.bbfdd99f.chunk.js",
+    "static/css/main.1fa7570f.chunk.css",
+    "static/js/main.76a7a630.chunk.js"
+  ]
+}
