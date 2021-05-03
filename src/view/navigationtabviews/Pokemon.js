@@ -28,8 +28,8 @@ export const Pokemon = () => {
             const displayData = () => {
                 if(!loading)
                 {return APIData.results?.map((x)=>
-                    <div key={Math.random()}>
-                    <h1 onClick={()=> history.push(Routingpath.itemDetailView)}>{x.name} </h1>
+                    <div key={x.name}>
+                    <h1 onClick={()=> history.push(Routingpath.itemDetailView, x)}>{x.name} </h1>
                 </div>
                 
 
@@ -38,8 +38,7 @@ export const Pokemon = () => {
         
             return (
         <div>
-            <h1>Pokemon API</h1>
-            <h1 onClick={console.log(APIData)}>100 view</h1>
+            <h1>Pokemon API</h1><br></br>
 
             {displayData()}
         </div>
